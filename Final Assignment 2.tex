@@ -1,0 +1,238 @@
+\documentclass[10pnt]{article}
+\author{Irene}
+\title{Assignment II}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancy}
+
+\chead[Assignment 2 Irene Laureijs 508695]{Assignment 2 Irene Laureijs 508695}
+\cfoot[Numerical Simulation]{Numerical Simulation}
+
+
+\begin{document}
+\textit{For this assignment I choose the Lewis assignment from the Seminar: Growth and Development. The first question is more the mathematical part and the second question includes more text and three graphs. The figures are shown on the last page}
+		\\
+		\\
+		\\
+\textbf{Question 1} 
+		\\
+		\\
+\textbf{The Lewis model assumes that a fixed fraction of profits is reinvested; the Solow model assumes that a fixed fraction of total income is reinvested. Let’s compare the two assumptions: How does the Lewis model change if the Solow assumption about savings rates is used and vice versa? Show the dynamics of the models.}  
+	\\
+	\\
+	\\
+	$Ys=AsLs$
+	\\
+	$Ym=AmKm^aLm^{1-a}$
+	\\
+	$Ws=As$
+	\\
+	$Wm=
+	\frac{(1-a)Wm}{Lm}
+	$
+	\\
+	$L=Ls+Lm$
+	\\
+	$Wm=\varphi{Ws}$
+	\\
+	$\dot{K}= SyY-\delta{K}$
+	\\
+	\\
+	We can derive what $Lm$ is in equilibrium as a function of parameters: 
+	because $wm=\varphi{w}s$
+	\\
+	\\
+	So
+	\\
+	\\
+	$(1-a)AmKm^aLm^{-a}= \varphi{A}s$
+	\\
+	$Lm^{-a}=\frac{\varphi{As}}{(1-a)AmKm^{a}}$
+	\\
+	$Lm=
+	\frac{(1-a)AmKm^a}{\varphi{As}}^{\frac{1}{a}}
+	$
+	\\
+	$L=
+	\frac{(1-a)Am}{\varphi{As}}^\frac{1}{a}K
+	$
+	\\
+	\\
+	Mature economy: $Lm=L$ with a corresponding capital level at the start of maturity level K:
+	\\
+	\\
+	$L=
+	\frac{(1-a)Am}{\varphi{As}}^\frac{1}{a}K\sharp
+	$
+	\\
+	$K\sharp=
+	\frac{\varphi{As}}{(1-a)Am}^\frac{1}{a}L
+	$
+	\\
+	\\
+	The output in the economy is:
+	\\
+	\\
+	$Y=Ys+Ym = AsLs+AmKm^aLm^{1-a}$
+	\\
+	$
+	= As(l-Lm)+AmKm^a(\frac{LK}{K\sharp})
+	$
+	\\
+	$
+	= AsL+(\frac{\varphi-1+a}{1-a})\frac{AsL}{K\sharp}K
+	$
+	\\
+	\\
+	\\
+	This result is the same as in the Lewis model. In both models, the marginal product of capital is constant
+	and we still have an AK-like growth model as an increase in capital still attracts labor to the modern sector.
+	However the transition dynamics for capital change:
+	\\
+	\\
+	$\widehat{K}=
+	\frac{\dot{K}}{K}
+	$
+	$= \frac{SyY-\delta{K}}{K}
+	$
+	$= Sy(AsL+(\frac{\varphi-1+a}{1-a})(\frac{AsL}{K\sharp})K)\frac{1}{K}-\delta
+	$
+	\\
+	$\widehat{Y}=
+	1-\frac{AsL}{Y}\widehat{K}$
+	\\
+	\\
+	\\
+	Thus, capital accumulation differs considerably under the assumption that savings are now a fixed part
+	of total output, instead of a fixed part of the capitalists’ profits (Lewis’ assumption).
+	Under Lewis’ assumption, we had that:
+	\\
+	\\
+	$ \widehat{K}= 
+	\frac{\dot{K}}{K} = S\pi aAm(\frac{L}{K\sharp})^(1-a)-\delta
+	$
+	\\
+	\\
+	And for $\widehat{Y}$ see above
+	\\
+	\\
+	In the Lewis model with the Solow savings assumption, we see that capital accumulation firstly depends
+	on the savings over total output. So not only capital owners, also labor can provide savings (households
+	in general). Consequently, capital accumulation also depends on savings in the subsistence sector. This is
+	visible in the capital accumulation equation where also	$As$ 𝑠
+	is an important parameter now. However, the
+	speed of capital growth decreases with a larger $K$  (first term of the equation), though it always stays
+	positive even if $K\rightarrow\propto$  (due to the positive second term $ \varphi+a>1 $).
+	\\
+	\\
+	Solow model under Lewis’ assumption about savings rates
+	We use the Harrod-Neutral neoclassical production function (one production function):
+	\\
+	\\
+	$ Y=(AL)^{1-a}K^a
+	\\
+	w=MPL=(1-a)k^a 
+	\\
+	r=mpk=a(AL)^{1-a}K^{a-1}=ak^{a-1}
+	\\
+	$ where $ k = \frac{K}{Al} $ and $y=\frac{Y}{AL}= k^a$
+	\\
+	\\
+	Now we assume that 
+	\\
+	\\
+	$ \dot{K}= S\pi(Y-WL)-\delta{K} $ 
+	\\
+	\\
+	In steady state:
+	\\
+	\\
+	$\widehat{k}=\widehat{K}-\widehat{A}-\widehat{L}= 0 $ 
+	\\
+	$\widehat{k}= (s\pi(\frac{Y-wL}{K})-\delta)-\widehat{A}-\widehat{L} = 0
+	$
+	\\
+	$\widehat{k}= s\pi(-a)k^{a-1}-(\delta+\widehat{A}+\widehat{L})=0 $
+	\\
+	\\
+	From that we can derive the $k^*$ level:
+	\\
+	\\
+	$S\pi-ak^{a-1}-(\delta+\widehat{A}+\widehat{L}) = 0 $
+	\\
+	$ k^*= \frac{\delta+\widehat{A}+\widehat{L}}{S\pi-a}^\frac{1}{a-1}
+	$
+	\\
+	\\
+	Our steady state capital per effective labor is only really constant if $A$ is a constant.
+	as $y=k^a$, we can write the steady state level of $y$ from that of $k$:
+	\\
+	\\
+	$ y^*= \frac{\delta+\widehat{A}+\widehat{L}}{S\pi-a}^\frac{a}{a-1}
+	$
+	\\
+	\\
+	Our steady state capital per effective labor is also only really a constant if $A$ is constant here. 
+	\\
+	\\
+	The transition dynamics:
+	\\
+	\\
+	$ \widehat{K}= \frac{\dot{K}}{K}= (S\pi(Y-WL)-\delta{K})\frac{1}{K}$
+	\\
+	$=S\pi \frac{Y-WL}{K}-\delta$
+	\\
+	$=S\pi(K^{a-1}AL^{1-a}- (1-a)k{a-1})-\delta$
+	\\	
+	$=S\pi-A^{a-1}-\delta$
+	\\
+	And via growth accounting, we get:
+	\\
+	\\
+	$\widehat{Y}=\widehat{A}+(1-a)\widehat{L}+a\widehat{K}$
+	\\
+	\\
+	What changes in this model with the Lewis savings assumption is that capital accumulation now depends only on capitalists’ savings. Specifically, capital accumulation depends negatively on the income share of labor $(1-a)$ in the economy, though this effect can be offset by a high value of $A$, as a higher value of $A$ leads to higher profits for the firm. This makes sense, since the income share of labor reduces profits in the economy (which leads via savings to capital accumulation). 
+	\\ 
+	\\
+	\\
+	\textbf{Question 2}
+	\\
+	\\
+	\textbf{Unified growth: from Lewis to Solow. Show the dynamics of an economy that starts with small capital stock and surplus labor and show how it can finally reach the “mature stage” where the economy behaves like the Solow model. Show how the dynamics of the two regimes are linked. Plot profits, output, wages, etc. as a function of the capital stock, distinguishing between the Lewis range. Generate time patterns etc. Make sure that the assumption about savings allows you to really connect the two models: e.g. assume that always a fixed fraction of profits is reinvested (even in the Solow regime), or assume that up to a threshold per capita income level nothing is saved, but a fixed fraction of the remainder of income.} 
+	\\
+	\\
+	For answering this question 
+	We modelled this economy in excel, to check its development over 50 periods. To do so, values for the parameters are needed. The values for $\widehat{A}m, a$ and $\delta$ are obtained from the paper of Mankiw, Romer and Weil (1992). For the other parameter $\widehat{L}, As, s\pi$ and $\varphi$ some realistic numbers are chosen. The values are summarized in table on the last page. Also initial values K0 and L0 are summarized in this table.
+	\\
+\\
+\\
+\\
+	Based on these values, we expect the following to happen in this economy over time: Output and capital growth: In the Lewis era, the growth rate of capital and output are expected to 
+	increase fast as profits leads the modern sector to grow at an increasing pace, while the modern sector is extracting labor from the subsistence sector.  Arriving in the Solow era, we expect the growth rates of output and capital to converge to, and will eventually arrive at, the long-run (steady state) expected growth rates.
+	Wages and profits growth: In the Lewis era, all wages cannot grow faster than the marginal productivity of labor in the subsistence sector (As), which grows at a pace of 0.1\% per year. If wages of the modern sector tend to rise faster than subsistence sector wages, labor flows to the modern sector, reducing the MPL in the modern sector, thereby taking away the upward pressure on wages. This leads to a very fast growth of profits, as capital productivity grows at a very high pace, stimulated by these labor inflows from the subsistence sector. As off the Solow era, there is no labor inflow in the modern sector from a subsistence sector, so that the marginal product of labor increases at a faster pace, and so do wages. As capital grows very fast initially, wages also grow very fast in the beginning of the Solow era. In the long run, as capital increases at its long-run level.
+\\
+\\	
+	So we run the model in excel see the graphs on the last page below. 
+	Graph 1 confirms the acceleration of both growth rates in the Lewis era. Moreover, it shows clearly that both capital and output growth indeed converge to the predicted 4\% level in the Solow era. Also graph 2 and 3 behave exactly as predicted.
+	Wage growth is in the Lewis era limited to wage/productivity growth in the subsistence sector, wage is equal to 0.1\%. The growth rate spikes upward as off the Solow era (high capital growth rate), but decreases thereafter over time as also the growth rate of capital decreases to its long-run level.  Profits indeed increase fast in the Lewis era, as wage growth is limited and capital gets more productive rapidly. From the start of the Solow era, where wage growth increases significantly, profit growth is reduced, though still positive, and converging to a long-run growth rate
+\\
+\\		
+\\
+\\
+{\Large\chapter{Graphs}}
+\\
+\noindent\rule{8cm}{0.4pt}
+\\
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.75\linewidth]{model5}
+		\label{fig:table 1}
+	\end{figure}
+	
+
+\end{document}
